@@ -1,0 +1,135 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #eff8ff;
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 { color: #3d4852; }
+
+a {
+  color: #6cb2eb;
+  font-size: 1.25rem;
+  transition: all 0.1s ease-in;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+a:hover { color: #3490dc; }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li, p {
+  color: #3d4852;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  line-height: 1.75;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+  display: flex;
+    align-items: center;
+}
+
+li:hover { color: #22292f; }
+li input { margin: 0 0.5rem 0; }
+
+input[type="checkbox"]{
+  width: auto;
+  display: inline !important;
+    box-shadow: none;
+}
+
+#app {
+  width: 95%;
+    max-width: 900px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  margin: 1rem;
+}
+
+#shopping-list > input, #shopping-list > select {
+  width: 100%;
+  color: #606f7b;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  border: 1px solid #f1f5f8;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem 0;
+  box-sizing: border-box;
+}
+
+.counter {
+  font-size: 0.8rem;
+  padding: 0 10px;
+}
+
+.add-item-form, .header {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-item-form input {
+  width: 70%;
+  color: #606f7b;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  border: 1px solid #f1f5f8;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: all 0.1s ease-in;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 0.75rem;
+  margin: auto 0;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #6cb2eb;
+  color: #fff;
+}
+
+.btn-primary:hover { background: #3490dc; }
+
+.btn-cancel {
+  background: #ef5753;
+  color: #fff;
+}
+
+.btn-cancel:hover {
+  background: #e3342f;
+  color: #fff;
+}
+
+.btn[disabled] { background: #8795a1; }
+.btn[disabled]:hover { background: #606f7b; }
+
+.strikeout {
+  text-decoration: line-through;
+  color: #b8c2cc;
+}
+
+.strikeout:hover { color: #8795a1; }
+.priority { color: #de751f; }
